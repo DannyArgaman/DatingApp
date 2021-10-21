@@ -7,6 +7,13 @@ nav{
 
 }
 
+img{
+    max-width: 4.5rem;
+    border: 2px solid #fff;
+    display: inline;
+    margin-right: 2rem;
+}
+
 @media screen and (max-width: 1000px) {
     nav ul{
         margin-right: 1rem;
