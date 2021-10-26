@@ -7,9 +7,17 @@
             <i class="fa fa-user"></i></Button></li>
             <li class="list-inline-item">
             <Button (click)="addLike(member)" class="btn btn-primary">
-            <i class="fa fa-heart"></i></Button></li>
-            <li class="list-inline-item"><Button class="btn btn-primary">
-                <i class="fa fa-envelope"></i></Button></li>
+            <i class="fa fa-heart"></i>
+           </Button>
+           </li>
+            <li class="list-inline-item">
+                <Button
+                routerLink="/members/{{member.username}}"
+                [queryParams]='{tab: 3}'
+                class="btn btn-primary">
+                <i class="fa fa-envelope"></i>
+            </Button>
+        </li>
          </ul>
 
          
